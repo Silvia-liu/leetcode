@@ -7,3 +7,5 @@ class Solution:
             n >>= 1
         return res
         # 方法二
+        
+        # 方法三
