@@ -15,6 +15,6 @@ class Solution:
             pre, cur = cur, cur.next
         # 经过上面两条语句，cur为待删除节点，判断cur是否为空，不为空，就更改指针指向
         if cur: pre.next = cur.next
-        # 返回头节点 即可
+        # 最后返回头节点 即可
         return head
 
