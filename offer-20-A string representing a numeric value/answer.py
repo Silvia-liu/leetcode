@@ -1,5 +1,6 @@
 class Solution:
     def isNumber(self, s: str) -> bool:
+        # 罗列各种状态
         states = [
             { ' ': 0, 's': 1, 'd': 2, '.': 4 }, # 0. start with 'blank'
             { 'd': 2, '.': 4 } ,                # 1. 'sign' before 'e'
