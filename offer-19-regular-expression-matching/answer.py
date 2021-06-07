@@ -9,6 +9,8 @@ class Solution:
             dp[0][j] = dp[0][j - 2] and p[j - 1] == '*'
         for i in range(1, m):
             for j in range(1, n):
+                # 如果if p[j - 1] == '*'，则dp[i][j] = dp[i][j - 2] or dp[i - 1][j] and (s[i - 1] == p[j - 2] or p[j - 2] == '.')
+                # 否则 dp[i - 1][j - 1] and (p[j - 1] == '.' or s[i - 1] == p[j - 1])  左侧表达式为真，则dp[i][j]=1（True）
                 dp[i][j] = dp[i][j - 2] or dp[i - 1][j] and (s[i - 1] == p[j - 2] or p[j - 2] == '.') \
                            if p[j - 1] == '*' else \
                            dp[i - 1][j - 1] and (p[j - 1] == '.' or s[i - 1] == p[j - 1])
