@@ -1,5 +1,6 @@
 class Solution:
-    #
+    # "."表示任意一个字符
+    # "*"表示前面的字符可以出现任意次，包括0次（清除前面字符）
     def isMatch(self, s: str, p: str) -> bool:
         m, n = len(s) + 1, len(p) + 1
         dp = [[False] * n for _ in range(m)]
