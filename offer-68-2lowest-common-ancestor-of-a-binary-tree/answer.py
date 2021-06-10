@@ -23,3 +23,4 @@ class Solution:
 #   p,q 其中一个在 root 的 右子树 中，此时 right 指向 pp（假设为 p ）；
 #   p,q 两节点都在 root 的 右子树 中，此时的 right 指向 最近公共祖先节点 ；
 # 4 当 left 不为空 ， right 为空 ：与情况 3. 同理；
+#
