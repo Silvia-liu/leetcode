@@ -9,5 +9,5 @@ class Solution:
             while postorder[p] > postorder[j]: p += 1  
                 # 执行上面这句话之前的p是（左边第一个大于根节点的数，即右子树），执行这句话就是：在一个后序遍历的小分叉中从右子树到根节点，while结束以后p就是根节点，即p == j
             return p == j and recur(i, m - 1) and recur(m, j - 1)  # recur(i, m - 1) and recur(m, j - 1)这些是递归进行判断是否为后序遍历的搜索二叉树
-        return recur(0, len(postorder) - 1)
+        return recur(0, len(postorder) - 1)  # 最开始的左右边界为0, len(postorder) - 1
 
