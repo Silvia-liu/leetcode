@@ -1,5 +1,5 @@
 from heapq import *
-
+# 用了库
 class MedianFinder:
     def __init__(self):
         self.A = [] # 小顶堆，保存较大的一半
