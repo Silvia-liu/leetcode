@@ -7,6 +7,7 @@ class Solution:
             self.k -= 1  # 减一，说明离第k大子节点更进一步了。
             if self.k == 0: self.res = root.val   # self.k == 0时，说明这时的root就是第k大子节点了，返回self.res
             dfs(root.left)  # 如果右子树没找到，那就找左子树
+            #
 
         self.k = k
         dfs(root)
