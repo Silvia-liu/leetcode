@@ -1,7 +1,7 @@
 class Solution:
     def reversePairs(self, nums: List[int]) -> int:
         def merge_sort(l, r):
-            # 终止条件
+            # 终止条件#
             if l >= r: return 0
             # 递归划分
             m = (l + r) // 2
