@@ -3,6 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
+#
 class Solution:
     def deleteNode(self, head: ListNode, val: int) -> ListNode:
         # 本题删除值为 val 的节点分需为两步：定位节点、修改引用
