@@ -1,6 +1,7 @@
 class Solution:
     def getLeastNumbers(self, arr: List[int], k: int) -> List[int]:        
         def quick_sort(arr, l, r):
+            #
             # 子数组长度为 1 时终止递归
             if l >= r: return
             # 哨兵划分操作（以 arr[l] 作为基准数）
