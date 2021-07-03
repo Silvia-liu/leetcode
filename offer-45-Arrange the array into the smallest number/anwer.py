@@ -2,7 +2,7 @@
 class Solution:
     def minNumber(self, nums: List[int]) -> str:
         # 可以参考offer 40里面对快排的讲解
-        # 下面这个函数是典型的快排套路函数 只是改了判断条件
+        # 下面这个函数是典型的快排套路函数 只是改了判断条件，可灵活运用
         def quick_sort(l , r):
             if l >= r: return
             i, j = l, r
