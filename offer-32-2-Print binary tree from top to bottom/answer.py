@@ -31,7 +31,7 @@ class Solution:
         res, queue = [], collections.deque()  # 初始化，用了python的collections.deque()，deque是双边队列，具有队列和栈的性质。相当于可以在两端操作的list
         queue.append(root)  # 初始化queue
         while queue:
-            temp = []  # 看似简单，就是在当前层里循环并把temp  append加进res，但是，我就是没想出来。。。。。
+            temp = []  # 看似简单，就是在当前层里循环并把temp  append加进res，但是，我就是没想出来。。。。。多做题吧
             for _ in range(len(queue)):
                 node = queue.popleft()  # 队首元素出队
                 temp.append(node.val)
