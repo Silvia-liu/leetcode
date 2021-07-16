@@ -21,8 +21,8 @@ dp[i]=min(dp[a]×2,dp[b]×3,dp[c]×5)
 class Solution:
     def nthUglyNumber(self, n: int) -> int:
         dp, a, b, c = [1] * n, 0, 0, 0
-        for i in range(1, n):
-            n2, n3, n5 = dp[a] * 2, dp[b] * 3, dp[c] * 5  # 这个就是规律
+        for i in range(1, n):‘”
+            n2, n3, n5 = dp[a] * 2, dp[b] * 3, dp[c] * 5  # 这个就是规律--------这一行尤其注意，a b c 只是索引，是dp列表的索引，动态规划本质还是用自己，推出“下一个自己”
             dp[i] = min(n2, n3, n5)  # 取最小的丑数
             if dp[i] == n2: a += 1  # 是他 是他 就是他，然后推出下一个丑数，并且自己+1
             if dp[i] == n3: b += 1
