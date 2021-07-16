@@ -1,5 +1,5 @@
 # 反正我是不会的
-
+# 不搬题解了，搬了也看不太懂，注意代码界面有一个python提交的，可以参考
 class Solution:
     def dicesProbability(self, n: int) -> List[float]:
         dp = [1.0 / 6.0] * 6
