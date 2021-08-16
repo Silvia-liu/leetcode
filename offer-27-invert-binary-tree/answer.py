@@ -30,7 +30,7 @@ class Solution:
         dfs(root)
         # print(root)
         return root
-# 
+# 递归
 class Solution:
     def mirrorTree(self, root: TreeNode) -> TreeNode:
         if not root: return
