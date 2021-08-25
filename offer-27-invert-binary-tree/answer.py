@@ -1,12 +1,12 @@
 # 二叉树问题again
 #多看多写
 #写完了写完了终于写完了
-
-
 #
-
-
-
+#
+#
+#
+#
+3
 # 方法一 辅助栈法
 class Solition:
     def minrrorTree(self,root:TreeNode) -> TreeNode:
