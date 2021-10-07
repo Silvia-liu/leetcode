@@ -4,6 +4,7 @@
 #
 #
 #
+3
 
 # 方法一 辅助栈法
 class Solition:
