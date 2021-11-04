@@ -3,7 +3,6 @@
 #写完了写完了终于写完了
 
 
-
 # 方法一 辅助栈法
 class Solition:
     def minrrorTree(self,root:TreeNode) -> TreeNode:
